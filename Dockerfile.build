@@ -1,0 +1,8 @@
+FROM alpine:3.20
+
+WORKDIR /src
+COPY . .
+
+RUN chmod +x build.sh
+
+CMD [ "./build.sh" ]
